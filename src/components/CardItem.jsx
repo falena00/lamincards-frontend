@@ -33,10 +33,7 @@ function CardItem({ card }) {
         </button>
       )}
 
-      <Link
-        to={`/carta/${card.cardid}`}
-        className="text-decoration-none text-dark d-block"
-      >
+      <Link to={`/carta/${card.setid}/${card.cardid}`} className="text-decoration-none text-dark">
         <div
           className="card border-0 shadow-sm rounded mx-auto"
            style={{

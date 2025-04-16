@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<SerieList />} /> {/* Home */}
           <Route path="/serie/:setid" element={<Cards />} />
-          <Route path="/carta/:id" element={<Carta />} />
+          <Route path="/carta/:setid/:cardid" element={<Carta />} />
         </Routes>
       </div>
     </>
