@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import SerieList from "./components/SerieList";
 import Cards from "./pages/Cards"; 
+import Carta from "./pages/Carta";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <div className="container mt-4">
         <Routes>
           <Route path="/" element={<SerieList />} /> {/* Home */}
-          <Route path="/serie/:id" element={<Cards />} />
+          <Route path="/serie/:setid" element={<Cards />} />
+          <Route path="/carta/:id" element={<Carta />} />
         </Routes>
       </div>
     </>
